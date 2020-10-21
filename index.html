@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+        function del() {
+            document.getElementById("xxx").style.display = "none";
+        }
+    </script>
 </head>
 
 <body>
     <h1> My first heading</h1>
-    <p>My first paragraph</p>    
+    <p>My first paragraph</p>
 
     <h1>This is heading</h1>
     <h2>This is heading</h2>
@@ -16,7 +23,12 @@
 
     <strong>This is heading</strong>
 
-    <img src="SIGN.jpg" alt="신창용 서명" width="104" height="142"> 
+    <img id="xxx" src="SIGN.jpg" alt="신창용 서명" width="104" height="142">
     <a href="https://www.naver.com">GO to NAVER</a>
+    <a href="#" onclick="del()">
+        <img src="images/SIGN.jpg" alt="신창용 서명" width="104" height="142">
+    </a>
 </body>
+
+
 </html>
